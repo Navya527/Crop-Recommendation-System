@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Top 3 Recommended Crops</h1>
+    <ul>
+        {% for crop, prob in recommendations.items() %}
+            <li>{{ crop }} (Probability: {{ prob }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a>
+</body>
+</html>
